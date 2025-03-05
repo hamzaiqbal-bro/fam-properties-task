@@ -14,7 +14,7 @@ class BuildingRemoteDataSourceImpl implements BuildingRemoteDataSource {
 
   @override
   Future<List<BuildingModel>> getBuildings() async {
-    final url = 'https://fam-erp.com/property/test/Building/en/ALL/ALL/ALL/ALL/ALL/ALL/ALL/ALL/ALL/ALL/SEQ/0/0/0';
+    final url = '';
     final response = await client.get(Uri.parse(url));
 
     if (response.statusCode == 200) {
